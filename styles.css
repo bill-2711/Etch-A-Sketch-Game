@@ -7,6 +7,10 @@
 html {
   font-size: 62.5%;
 }
+
+body {
+  background-color: #010736;
+}
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -16,27 +20,28 @@ html {
 .per-box {
   height: 16px;
   width: 16px;
-  border: 1px solid black;
-  background-color: midnightblue;
+  border: 1px solid rgb(51, 65, 85);
+  background-color: #1e293b;
 }
 
 .show_modal {
   border: none;
-  background-color: black;
-  color: blue;
+  background-color: #676a86;
+  color: #fff;
   font-size: 1.7rem;
   padding: 1.6rem 3.2rem;
   border-radius: 1rem;
   transition: all 0.3s ease-in;
 
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2rem;
+  right: 2rem;
 }
 
 .show_modal:hover {
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.726);
+  background-color: #4d5172;
+  transform: translateY(-2px);
 }
 
 .modal {
@@ -45,17 +50,24 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.237);
+  background-color: #0f172abf;
 }
 
 .user_value {
-  background-color: rgba(54, 54, 163, 0.775);
+  width: 25rem;
+  background-color: #1e293b;
+  border: 1px solid #475569;
   padding: 1.6rem 3.2rem;
   outline: none;
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
   color: white;
+  border-radius: 1rem;
+}
+
+.user_value:focus {
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
 }
 
 .hidden {
